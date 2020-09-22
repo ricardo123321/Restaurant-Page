@@ -1,0 +1,28 @@
+#content{
+  position: relative;
+  background-image:
+  linear-gradient(to bottom, #1d2225, rgba(22, 15, 20, 0.73)),
+  url('/src/assets/imgs/tuna.jpg');
+  height: 100vh
+}
+
+#navbin{
+ background-image: linear-gradient(to bottom, #1d2225, rgba(22, 15, 20, 0.73));
+ border-bottom: 0px;
+}
+
+.f-marg{
+ padding-top: 60px;
+}
+
+.text-w{
+  color: rgb(230, 221, 221);
+}
+
+.pagef{
+  position: absolute;
+}
+
+.marg{
+  margin-top: 15px;
+}
