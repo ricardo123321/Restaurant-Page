@@ -52,7 +52,12 @@ const navbar = () => {
 navbar()
 
 const about = () => {
-  const txtabout = document.getElementById('content')
+  const txtabout = document.getElementById('content') 
+
+  if(document.getElementById('rest') !== null){
+    const some = document.getElementById('rest')
+    txtabout.removeChild(some)
+  }
 
   const txt1 = document.createElement('p');
   txt1.textContent = 'Home of the most delicious sushi you can find here on earth'
@@ -76,6 +81,34 @@ const about = () => {
   img.setAttribute('alt', 'about img')
 
   const col2 = document.createElement('div');
-  col.setAttribute('class', 'col-md-6 col-sm-6')
-  col.appendChild(img)
+  col2.setAttribute('class', 'col-md-6 col-sm-6')
+  col2.appendChild(img)
+
+  const h1 = document.createElement('h1');
+  const col12 = document.createElement('div');
+  col12.setAttribute('class', 'col-lg-12 col-md-12 col-sm-12 col-xs-12')
+  col12.appendChild(h1)
+
+  const row = document.createElement('div');
+  row.setAttribute('class', 'row')
+  row.appendChild(col)
+  row.appendChild(col2)
+  row.appendChild(col12)
+
+  const container = document.createElement('div')
+  container.setAttribute('class', 'container')
+  container.appendChild(row)
+
+  const pageplace = document.createElement('section')
+  pageplace.setAttribute('class', 'f-marg text-w')
+  pageplace.setAttribute('id', 'pageplace')
+  pageplace.appendChild(container)
+
+  const rest = document.createElement('div');
+  rest.setAttribute('id', 'rest');
+  rest.appendChild(pageplace)
+
+  txtabout.appendChild(rest)
 }
+
+about()
