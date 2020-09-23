@@ -1,62 +1,17 @@
-const navbar = () => {
-  const navtop = document.getElementById('content')
-
-  const acont = document.createElement('a');
-  acont.textContent = 'CONTACT'
-  const licont = document.createElement('li');
-  licont.setAttribute('class', 'contact');
-  licont.appendChild(acont);
-
-  const amenu = document.createElement('a');
-  amenu.textContent = 'MENU'
-  const limenu = document.createElement('li');
-  limenu.setAttribute('class', 'menu');
-  limenu.appendChild(amenu);
-
-  const aabout = document.createElement('a');
-  aabout.textContent = 'ABOUT'
-  const libout = document.createElement('li');
-  libout.setAttribute('class', 'about');
-  libout.appendChild(aabout)
-
-  const ulm = document.createElement('ul');
-  ulm.setAttribute('class', 'nav navbar-nav navbar-right');
-  ulm.appendChild(libout);
-  ulm.appendChild(limenu);
-  ulm.appendChild(licont);
-
-  const collac = document.createElement('div');
-  collac.setAttribute('class', 'collapse navbar-collapse');
-  collac.appendChild(ulm)
-
-  const brand = document.createElement('a');
-  brand.setAttribute('class', 'navbar-brand')
-  brand.textContent = 'HAPPY SUSHI'
-  const navhead = document.createElement('div');
-  navhead.setAttribute('class', 'navbar-header');
-  navhead.appendChild(brand)
-
-  const container = document.createElement('div');
-  container.setAttribute('class', 'container');
-  container.appendChild(navhead)
-  container.appendChild(collac)
-
-  const navbin = document.createElement('div');
-  navbin.setAttribute('class', 'navbar navbar-default navbar-fixed-top');
-  navbin.setAttribute('id', 'navbin');
-  navbin.appendChild(container)
-
-  navtop.appendChild(navbin)
-}
-
-navbar()
-
 const about = () => {
-  const txtabout = document.getElementById('content') 
+  const txtabout = document.getElementById('content')
+  let some = ''
 
   if(document.getElementById('rest') !== null){
-    const some = document.getElementById('rest')
-    txtabout.removeChild(some)
+  some = document.getElementById('rest')
+  }else{
+    some = document.createElement('div');
+    some.setAttribute('id', 'rest')
+  }
+
+  if(document.getElementById('pageplace') !== null){
+    const somed = document.getElementById('pageplace')
+    some.removeChild(somed)
   }
 
   const txt1 = document.createElement('p');
@@ -104,11 +59,61 @@ const about = () => {
   pageplace.setAttribute('id', 'pageplace')
   pageplace.appendChild(container)
 
-  const rest = document.createElement('div');
-  rest.setAttribute('id', 'rest');
-  rest.appendChild(pageplace)
-
-  txtabout.appendChild(rest)
+  some.appendChild(pageplace)
+  txtabout.appendChild(some)
 }
 
+const navbar = () => {
+  const navtop = document.getElementById('content')
+
+  const acont = document.createElement('a');
+  acont.textContent = 'CONTACT'
+  const licont = document.createElement('li');
+  licont.setAttribute('class', 'contact');
+  licont.appendChild(acont);
+
+  const amenu = document.createElement('a');
+  amenu.textContent = 'MENU'
+  const limenu = document.createElement('li');
+  limenu.setAttribute('class', 'menu');
+  limenu.appendChild(amenu);
+
+  const aabout = document.createElement('a');
+  aabout.textContent = 'ABOUT'
+  const libout = document.createElement('li');
+  libout.setAttribute('class', 'about');
+  libout.addEventListener('click', () => {about()})
+  libout.appendChild(aabout)
+
+  const ulm = document.createElement('ul');
+  ulm.setAttribute('class', 'nav navbar-nav navbar-right');
+  ulm.appendChild(libout);
+  ulm.appendChild(limenu);
+  ulm.appendChild(licont);
+
+  const collac = document.createElement('div');
+  collac.setAttribute('class', 'collapse navbar-collapse');
+  collac.appendChild(ulm)
+
+  const brand = document.createElement('a');
+  brand.setAttribute('class', 'navbar-brand')
+  brand.textContent = 'HAPPY SUSHI'
+  const navhead = document.createElement('div');
+  navhead.setAttribute('class', 'navbar-header');
+  navhead.appendChild(brand)
+
+  const container = document.createElement('div');
+  container.setAttribute('class', 'container');
+  container.appendChild(navhead)
+  container.appendChild(collac)
+
+  const navbin = document.createElement('div');
+  navbin.setAttribute('class', 'navbar navbar-default navbar-fixed-top');
+  navbin.setAttribute('id', 'navbin');
+  navbin.appendChild(container)
+
+  navtop.appendChild(navbin)
+}
+
+navbar()
 about()
