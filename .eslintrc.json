@@ -16,5 +16,9 @@
       "arrow-parens": "off",
       "no-undef": "off",
       "no-unused-vars": "off"
-    }
+    },
+    "ignorePatterns": [
+      "dist/",
+      "build/"
+    ]
   }
