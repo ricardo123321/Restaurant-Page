@@ -1,4 +1,5 @@
 import {menu} from './menu'
+import {contact} from './contact'
 const about = () => {
   const txtabout = document.getElementById('content')
   let some = ''
@@ -72,6 +73,7 @@ const navbar = () => {
   acont.setAttribute('href', '#');
   const licont = document.createElement('li');
   licont.setAttribute('class', 'contact');
+  licont.addEventListener('click', () => {contact()})
   licont.appendChild(acont);
 
   const amenu = document.createElement('a');
@@ -120,5 +122,28 @@ const navbar = () => {
   navtop.appendChild(navbin)
 }
 
+const footer = () => {
+  const foot = document.getElementById('content')
+
+  const copyr = document.createElement('p')
+  copyr.setAttribute('class', 'footer-copyright text-center')
+  copyr.textContent = 'Copyright &copy; 2084 Company Name'
+  const col = document.createElement('div')
+  col.setAttribute('class', 'col-md-12')
+  col.appendChild(copyr)
+  const row = document.createElement('div')
+  row.setAttribute('class', 'row')
+  row.appendChild(col)
+  const contmarg = document.createElement('div')
+  contmarg.setAttribute('class', 'container marg')
+  contmarg.appendChild(row)
+  const navbin = document.createElement('div')
+  navbin.setAttribute('class', 'text-w navbar navbar-fixed-bottom')
+  navbin.setAttribute('id', 'navbin')
+  navbin.appendChild(contmarg)
+  foot.appendChild(navbin)
+}
+
 navbar()
-menu()
+about()
+footer()
