@@ -133,4 +133,4 @@ const contact = () => {
   txtcont.appendChild(some);
 };
 
-export { contact };
+export default contact;

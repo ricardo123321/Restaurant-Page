@@ -1,56 +1,56 @@
-html{
+html {
   margin: 0;
   height: 100%;
 }
 
-body{
+body {
   background-image:
-  linear-gradient(to bottom, #1d2225, rgba(22, 15, 20, 0.73)),
-  url('/src/assets/imgs/tuna.jpg');
-  background-size:100% 100%;
+    linear-gradient(to bottom, #1d2225, rgba(22, 15, 20, 0.73)),
+    url('/src/assets/imgs/tuna.jpg');
+  background-size: 100% 100%;
   background-repeat: repeat-y;
   margin: 0;
   height: 100%;
 }
 
-#navbin{
- background-image: linear-gradient(to bottom, #1d2225, rgba(22, 15, 20, 0.73));
- border-bottom: 0px;
+#navbin {
+  background-image: linear-gradient(to bottom, #1d2225, rgba(22, 15, 20, 0.73));
+  border-bottom: 0;
 }
 
-.f-marg{
- padding-top: 120px;
+.f-marg {
+  padding-top: 120px;
 }
 
-.f-margm{
+.f-margm {
   padding-top: 50px;
   margin-bottom: 50px;
- }
+}
 
-.text-w{
+.text-w {
   color: rgb(230, 221, 221);
 }
 
-.pagef{
+.pagef {
   position: absolute;
 }
 
-.marg{
+.marg {
   margin-top: 15px;
 }
 
-.img-100{
+.img-100 {
   width: 100%;
 }
 
-.mbt-2{
+.mbt-2 {
   margin-bottom: 20px;
 }
 
-.f-margc{
+.f-margc {
   margin-top: 90px;
 }
 
-.cush{
+.cush {
   height: 300px;
 }

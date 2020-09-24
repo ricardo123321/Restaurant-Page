@@ -225,4 +225,4 @@ const menu = () => {
   txtmenu.appendChild(some);
 };
 
-export { menu };
+export default menu;

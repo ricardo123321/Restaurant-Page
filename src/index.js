@@ -1,5 +1,5 @@
-import { menu } from './menu';
-import { contact } from './contact';
+import menu from './menu';
+import contact from './contact';
 
 const about = () => {
   const txtabout = document.getElementById('content');
