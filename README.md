@@ -7,14 +7,14 @@ This project is a simple page where you can save informations about any book you
 ### Built With
 This project was built using these technologies.
 
-*Javascript
-*Node
-*Webpack
-*Bootstrap
-*VSCode
-*ESLint
-*Stylelint
-*Github Actions
+* Javascript
+* Node
+* Webpack
+* Bootstrap
+* VSCode
+* ESLint
+* Stylelint
+* Github Actions
 
 ### Live Demo
 
