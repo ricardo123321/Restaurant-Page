@@ -2,7 +2,11 @@
 
 ![screenshot](./screenshot.png)
 
-This project is a simple page where you can save informations about any book you want, you can save the title, author, number of pages and if you have read it or no.
+In this project, I emulated a simple restaurant page name Happy Sushi making use of DOM manipulation elements in an empty div container making the transitions in the page dynamic some important features are:
+
+* Boostrap Styling for Menu Items.
+* Separate Module for Display.
+* Github Pages Live Link
 
 ### Built With
 This project was built using these technologies.
