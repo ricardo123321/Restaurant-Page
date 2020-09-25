@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --mode production"
   },
   "author": "",
   "license": "ISC"
