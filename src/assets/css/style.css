@@ -6,7 +6,7 @@ html {
 body {
   background-image:
     linear-gradient(to bottom, #1d2225, rgba(22, 15, 20, 0.73)),
-    url('/src/assets/imgs/tuna.jpg');
+    url('./src/assets/imgs/tuna.jpg');
   background-size: 100% 100%;
   background-repeat: repeat-y;
   margin: 0;
