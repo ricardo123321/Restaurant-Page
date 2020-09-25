@@ -34,9 +34,9 @@ Inside the root folder of the project, install the node packages:
 ```
 npm install
 ```
-Go to the root folder and run the npm server script:
+Go to the root folder and run the npm build script:
 ```
-npm run server
+npm run build
 ```
 ## Author
 
